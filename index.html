@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTAURANT - SLYTHERIN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preload" as="image" href="./assets/images/slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/slider-3.jpg">
+
+</head>
+
+<body id="top">
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Our Restaurant</p>
+  </div> 
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#logo" class="logo">
+        <img src="favicon.svg" width="60px" height="10px" alt="Sakura Home">
+      </a>
+      <span class="navbar-link hover-underline active">SAKURA RESTAURANT</span>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#logo" class="logo">
+          <img src="favicon.svg" width="150" height="40" alt="Sakura - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menu</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#chefs" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#contact" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+<!--
+   Main Header
+-->
+
+
+  <main>
+    <article>
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <h1 class="display-1 hero-title slider-reveal">
+              Welcome to Our Restaurant <br>
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              We made delicious and mouthwatering food.
+            </p>
+
+            <a href="Menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+            
+            </a>
+
+          </li>
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Welcome to Our Restaurant <br>
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              We made delicious and mouthwatering food.
+            </p>
+
+            <a href="Menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Welcome to Our Restaurant <br>
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              We made delicious and mouthwatering food.
+            </p>
+
+            <a href="Menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+      </section>
+
+      <!-- 
+        MENU
+      -->
+
+
+      <section class="section service bg-black-10 text-center" aria-label="service" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle label-2">OUR MENU</p>
+
+          <h2 class="headline-1 section-title">What's In Our Delicious Menu</h2>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+            standard dummy text ever.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a>Breakfast</a>
+                  </h3>
+
+                  <a href="Menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a>Lunch</a>
+                  </h3>
+
+                  <a href="Menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a >Drinks</a>
+                  </h3>
+
+                  <a href="Menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-4.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a>Desert</a>
+                  </h3>
+
+                  <a href="Menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-5.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a>Italian </a>
+                  </h3>
+
+                  <a href="Menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-6.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a>Thai Food </a>
+                  </h3>
+
+                  <a href="Menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <a href="Menu.html" target="_blank" class="btn btn-primary slider-reveal">
+            <span class="text text-1">Our Menu</span>
+            <span class="text text-2" aria-hidden="true">Our Menu</span>
+          </a>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      
+      </section>
+
+
+
+     <!-- 
+        ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">ABOUT US</p>
+
+            <h2 class="headline-1 section-title">EAT! ORDER! REPEAT!</h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae eius eos nemo minima. Minus corporis, iste, accusamus voluptate debitis placeat beatae quibusdam laboriosam, eius possimus voluptates odio ratione aut eveniet.
+              
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+
+            <a href="#about" class="btn btn-primary">
+              <span class="text text-1">Open: 9:00 am - 10:00pm</span>
+
+            </a>
+          
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section> 
+
+      <!-----
+        CHefs
+      -->
+      <section class="section service bg-black-10 text-center" aria-label="service" id="chefs">
+        <div class="container">
+
+          <p class="section-subtitle label-2">OUR CHEFS</p>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+            standard dummy text ever.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/chef-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a >ANDREW MATHSON</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/chef-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a >SUHARSH KAPOOR</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a>
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/chef-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a >LILA THOMSON</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      
+      </section>
+      <div class="special-dish-content bg-black-1"></div>
+      <!-- 
+        RESERVATION
+      -->
+
+      <section id="contact" class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="mailto:pallavisharma5670@gmail.com" class="form-left">
+
+              <h2 class="headline-1 text-center">Contact & Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" re>
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 </option>
+                    <option value="2-person">2 </option>
+                    <option value="3-person">3 </option>
+                    <option value="4-person">4 </option>
+                    <option value="5-person">5 </option>
+                    <option value="6-person">6 </option>
+                    <option value="7-person">7 </option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Submit</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Call us @</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+
+              <div class="separator"></div>
+
+              <address class="body-4">
+                Restaurant Oxford street 55, New York<br>
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+  </main>
+
+
+  <!-- 
+    FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center">
+    <div class="container">
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+          <p class="label-2 section-subtitle" id="about-label">SAKURA RESTAURANT</p>
+            
+          <address class="body-4">
+            Restaurant Oxford street 55, New York
+          </address>
+
+          <a href="mailto:pallavisharma5670@gmail.com" class="body-4 contact-link">booking@sakura.com</a>
+
+          <p class="body-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat itaque praesentium voluptas vitae commodi maiores numquam quibusdam natus aperiam error reiciendis doloremque, ullam aut esse facere, impedit distinctio quos unde?
+          </p>
+          <p class="body-3">
+          OPENING FROM :- 1st Oct, 2023
+          </p>
+
+        </div>
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#chefs" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com/" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2023. All Rights Reserved <a href="pallavisharma5670@gmail.com"
+            target="_blank" class="link">Pallavi Sharma</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+  <!-- 
+    js link
+  -->
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
